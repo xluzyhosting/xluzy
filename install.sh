@@ -5,7 +5,8 @@ BLUE='\033[0;34m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
-PURPLE='\033[0;35m'
+ORANGE='\033[1;33m'
+LGREEN='\033[1;32m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
@@ -13,10 +14,10 @@ NC='\033[0m'
 display_welcome() {
   echo -e ""
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
+  echo -e "${BLUE}[+]                                                      [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © XLUZYHOST                [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
+  echo -e "${BLUE}[+]                  © XLUZYHOST                      [+]${NC}"
+  echo -e "${BLUE}[+]                                                      [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
@@ -34,14 +35,14 @@ display_welcome() {
 install_jq() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
+  echo -e "${BLUE}[+]             UPDATE & INSTALL JQ                   [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo apt update && sudo apt install -y jq
   if [ $? -eq 0 ]; then
     echo -e "                                                       "
     echo -e "${GREEN}[+] =============================================== [+]${NC}"
-    echo -e "${GREEN}[+]              INSTALL JQ BERHASIL                    [+]${NC}"
+    echo -e "${GREEN}[+]              INSTALL JQ BERHASIL                  [+]${NC}"
     echo -e "${GREEN}[+] =============================================== [+]${NC}"
   else
     echo -e "                                                       "
@@ -454,11 +455,11 @@ while true; do
   clear
   echo -e "                                                                     "
   echo -e "${RED}██╗░░██╗██╗░░░░░██╗░░░██╗███████╗██╗░░░██╗${NC}"
-  echo -e "${YELLOW}╚██╗██╔╝██║░░░░░██║░░░██║╚════██║╚██╗░██╔╝${NC}"
-  echo -e "${GREEN}░╚███╔╝░██║░░░░░██║░░░██║░░███╔═╝░╚████╔╝░${NC}"
-  echo -e "${CYAN}░██╔██╗░██║░░░░░██║░░░██║██╔══╝░░░░╚██╔╝░░${NC}"
-  echo -e "${BLUE}██╔╝╚██╗███████╗╚██████╔╝███████╗░░░██║░░░${NC}"
-  echo -e "${PURPLE}╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝░░░╚═╝░░░${NC}"
+  echo -e "${ORANGE}╚██╗██╔╝██║░░░░░██║░░░██║╚════██║╚██╗░██╔╝${NC}"
+  echo -e "${YELLOW}░╚███╔╝░██║░░░░░██║░░░██║░░███╔═╝░╚████╔╝░${NC}"
+  echo -e "${LGREEN}░██╔██╗░██║░░░░░██║░░░██║██╔══╝░░░░╚██╔╝░░${NC}"
+  echo -e "${CYAN}██╔╝╚██╗███████╗╚██████╔╝███████╗░░░██║░░░${NC}"
+  echo -e "${BLUE}╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝░░░╚═╝░░░${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"

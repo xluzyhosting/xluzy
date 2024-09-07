@@ -68,7 +68,7 @@ check_token() {
   if [ "$USER_TOKEN" = "xluzy" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
-    echo -e "${GREEN}Buy dulu Gih Ke XluzyHost${NC}"
+    echo -e "${GREEN}Buy dulu Ke XluzyHost${NC}"
     echo -e "${YELLOW}TELEGRAM : @xluzyhost1${NC}"
     echo -e "${YELLOW}WHATSAPP : 6287712933029${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 15K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
@@ -90,12 +90,12 @@ install_theme() {
     echo "1. stellar"
     echo "2. billing"
     echo "3. enigma"
-    echo "x. kembali"
+    echo "0. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C2.zip")
+        THEME_URL=$(echo -e "https://github.com/xluzymodz/xluzy/raw/main/C2.zip")
         break
         ;;
       2)
@@ -103,10 +103,10 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C3.zip")
+        THEME_URL=$(echo -e "https://github.com/xluzymodz/xluzy/raw/main/C3.zip")
         break
         ;; 
-      x)
+      0)
         return
         ;;
       *)
@@ -184,11 +184,11 @@ elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "                                                                   "
 
     # Menanyakan informasi kepada pengguna untuk tema Enigma
-    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
+    echo -e "${YELLOW}Masukkan link wa (https://wa.me/6287712933029) : ${NC}"
     read LINK_WA
-    echo -e "${YELLOW}Masukkan link group (https://.....) : ${NC}"
+    echo -e "${YELLOW}Masukkan link group (https://chat.whatsapp.com/D6EMJU8sRhU0RK7avhF1RF) : ${NC}"
     read LINK_GROUP
-    echo -e "${YELLOW}Masukkan link channel (https://...) : ${NC}"
+    echo -e "${YELLOW}Masukkan link channel (https://whatsapp.com/channel/0029VajZ3PEH5JLrK0nZV82O) : ${NC}"
     read LINK_CHNL
 
     # Mengganti placeholder dengan nilai dari pengguna
@@ -391,61 +391,6 @@ sudo systemctl start wings
   clear
   exit 0
 }
-hackback_panel() {
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    HACK BACK PANEL              [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  # Minta input dari pengguna
-read -p "Masukkan Username Panel: " user
-read -p "password login " psswdhb
-  #!/bin/bash
-cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
-
-# Membuat lokasi baru
-php artisan p:user:make <<EOF
-yes
-hackback@gmail.com
-$user
-$user
-$user
-$psswdhb
-EOF
-  echo -e "                                                       "
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 AKUN TELAH DI ADD               [+]${NC}"
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  sleep 2
-  
-  exit 0
-}
-ubahpw_vps() {
-  echo -e "                                                       "
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                    UBAH PASSWORD VPS            [+]${NC}"
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-read -p "Masukkan Pw Baru: " pw
-read -p "Masukkan Ulang Pw Baru " pw
-
-passwd <<EOF
-$pw
-$pw
-
-EOF
-
-
-  echo -e "                                                       "
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 GANTI PW VPS SUKSES             [+]${NC}"
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  sleep 2
-  
-  exit 0
-}
 # Main script
 display_welcome
 install_jq
@@ -468,9 +413,7 @@ while true; do
   echo "4. Create Node"
   echo "5. Uninstall Panel"
   echo "6. Stellar Theme"
-  echo "7. Hack Back Panel"
-  echo "8. Ubah Pw Vps"
-  echo "x. Exit"
+  echo "0. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
   clear
@@ -494,13 +437,7 @@ while true; do
       6)
       install_themeSteeler
       ;;
-      7)
-      hackback_panel
-      ;;
-      8)
-      ubahpw_vps
-      ;;
-    x)
+    0)
       echo "Keluar dari skrip."
       exit 0
       ;;

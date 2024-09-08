@@ -8,6 +8,7 @@ YELLOW='\033[0;33m'
 ORANGE='\033[1;33m'
 PURPLE='\033[1;35m'
 CYAN='\033[1;36m'
+WHITE='\033[0;37m'
 NC='\033[0m'
 
 # Display welcome message
@@ -34,9 +35,9 @@ display_welcome() {
 #Update and install jq
 install_jq() {
   echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${ORANGE}[+] =============================================== [+]${NC}"
+  echo -e "${ORANGE}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
+  echo -e "${ORANGE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo apt update && sudo apt install -y jq
   if [ $? -eq 0 ]; then
@@ -229,7 +230,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/gitfdil1248/thema/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/xluzymodz/xluzy/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -400,11 +401,11 @@ while true; do
   clear
   echo -e "                                                                     "
   echo -e "${RED}██╗░░██╗██╗░░░░░██╗░░░██╗███████╗██╗░░░██╗${NC}"
-  echo -e "${YELLOW}╚██╗██╔╝██║░░░░░██║░░░██║╚════██║╚██╗░██╔╝${NC}"
-  echo -e "${ORANGE}░╚███╔╝░██║░░░░░██║░░░██║░░███╔═╝░╚████╔╝░${NC}"
-  echo -e "${CYAN}░██╔██╗░██║░░░░░██║░░░██║██╔══╝░░░░╚██╔╝░░${NC}"
-  echo -e "${BLUE}██╔╝╚██╗███████╗╚██████╔╝███████╗░░░██║░░░${NC}"
-  echo -e "${PURPLE}╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝░░░╚═╝░░░${NC}"
+  echo -e "${RED}╚██╗██╔╝██║░░░░░██║░░░██║╚════██║╚██╗░██╔╝${NC}"
+  echo -e "${RED}░╚███╔╝░██║░░░░░██║░░░██║░░███╔═╝░╚████╔╝░${NC}"
+  echo -e "${WHITE}░██╔██╗░██║░░░░░██║░░░██║██╔══╝░░░░╚██╔╝░░${NC}"
+  echo -e "${WHITE}██╔╝╚██╗███████╗╚██████╔╝███████╗░░░██║░░░${NC}"
+  echo -e "${WHITE}╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝░░░╚═╝░░░${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"

@@ -9,12 +9,6 @@ Need help or subscription, you can contact me on [Telegram](https://t.me/xluzyho
 
 Log in to your VPS, then allow root. After that, run the command below
 
-Install The Pterodactyl Panel
-```bash
-bash <(curl https://raw.githubusercontent.com/xluzymodz/xluzy/main/installpanelv2.sh)
-```
-
-Install The Theme And Configure It.
 ```bash
 bash <(curl https://raw.githubusercontent.com/xluzymodz/xluzy/main/install.sh)
 ```

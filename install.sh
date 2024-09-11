@@ -17,7 +17,7 @@ display_welcome() {
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
   echo -e "${BLUE}[+]                    © XLUZY-HOST                 [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${RED}[+] ================================================ [+]${NC}"
+  echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "dilarang keras untuk memperjual belikan."

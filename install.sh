@@ -1,13 +1,12 @@
 #!/bin/bash
 
 # Color
-BLUE='\033[1;34m'       
-RED='\033[1;31m'
-GREEN='\033[1;32m'
+BLUE='\033[0;34m'       
+RED='\033[0;31m'
+GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
-PURPLE='\033[1;35m'
-CYAN='\033[1;36m'
-WHITE='\033[0;37m'
+WHITE='\033[1;37m'
+GRAY='\033[0;37m'
 NC='\033[0m'
 
 # Display welcome message
@@ -16,9 +15,9 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © XLUZYHOST                    [+]${NC}"
+  echo -e "${BLUE}[+]                  © XLUZY-HOST               [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "dilarang keras untuk memperjual belikan."
@@ -26,7 +25,7 @@ display_welcome() {
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
   echo -e "@xluzyhost1"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@XluzyHost"
+  echo -e "@xluzyhost"
   sleep 4
   clear
 }
@@ -34,9 +33,9 @@ display_welcome() {
 #Update and install jq
 install_jq() {
   echo -e "                                                       "
-  echo -e "${YELLOW}[+] =============================================== [+]${NC}"
-  echo -e "${YELLOW}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
-  echo -e "${YELLOW}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo apt update && sudo apt install -y jq
   if [ $? -eq 0 ]; then
@@ -59,7 +58,7 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY XLUZYHOST                 [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY XLUZY-HOST            [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
@@ -68,11 +67,11 @@ check_token() {
   if [ "$USER_TOKEN" = "xluzyganteng" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
-    echo -e "${GREEN}Buy dulu Ke XluzyHost${NC}"
+    echo -e "${GREEN}Buy dulu Gih Ke Xluzy-Host${NC}"
     echo -e "${YELLOW}TELEGRAM : @xluzyhost1${NC}"
     echo -e "${YELLOW}WHATSAPP : 6287712933029${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 15K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}©XluzyHost${NC}"
+    echo -e "${YELLOW}© Xluzy-Host${NC}"
     exit 1
   fi
   clear
@@ -90,7 +89,7 @@ install_theme() {
     echo "1. stellar"
     echo "2. billing"
     echo "3. enigma"
-    echo "0. kembali"
+    echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r SELECT_THEME
     case "$SELECT_THEME" in
@@ -106,7 +105,7 @@ install_theme() {
         THEME_URL=$(echo -e "https://github.com/xluzymodz/xluzy/raw/main/C3.zip")
         break
         ;; 
-      0)
+      x)
         return
         ;;
       *)
@@ -184,11 +183,11 @@ elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "                                                                   "
 
     # Menanyakan informasi kepada pengguna untuk tema Enigma
-    echo -e "${YELLOW}Masukkan link wa (https://wa.me/6287712933029) : ${NC}"
+    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
     read LINK_WA
-    echo -e "${YELLOW}Masukkan link group (https://chat.whatsapp.com/D6EMJU8sRhU0RK7avhF1RF) : ${NC}"
+    echo -e "${YELLOW}Masukkan link group (https://.....) : ${NC}"
     read LINK_GROUP
-    echo -e "${YELLOW}Masukkan link channel (https://whatsapp.com/channel/0029VajZ3PEH5JLrK0nZV82O) : ${NC}"
+    echo -e "${YELLOW}Masukkan link channel (https://...) : ${NC}"
     read LINK_CHNL
 
     # Mengganti placeholder dengan nilai dari pengguna
@@ -248,7 +247,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/C2.zip https://github.com/gitfdil1248/thema/raw/main/C2.zip
+wget -O /root/C2.zip https://github.com/xluzymodz/xluzy/raw/main/C2.zip
 
 # Ekstrak file tema
 unzip /root/C2.zip -d /root/pterodactyl
@@ -285,7 +284,7 @@ exit 0
 create_node() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    CREATE NODE                  [+]${NC}"
+  echo -e "${BLUE}[+]                    CREATE NODE                     [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   #!/bin/bash
@@ -331,7 +330,7 @@ EOF
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES            [+]${NC}"
+  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES             [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
@@ -341,7 +340,7 @@ EOF
 uninstall_panel() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    UNINSTALL PANEL              [+]${NC}"
+  echo -e "${BLUE}[+]                    UNINSTALL PANEL                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
 read -p "UninstallPanel y/n " ypanel
@@ -360,7 +359,7 @@ EOF
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 UNINSTALL PANEL SUKSES          [+]${NC}"
+  echo -e "${GREEN}[+]                 UNINSTALL PANEL SUKSES             [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
@@ -370,7 +369,7 @@ EOF
 configure_wings() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    CONFIGURE WINGS              [+]${NC}"
+  echo -e "${BLUE}[+]                    CONFIGURE WINGS                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   #!/bin/bash
@@ -384,11 +383,95 @@ sudo systemctl start wings
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 CONFIGURE WINGS SUKSES          [+]${NC}"
+  echo -e "${GREEN}[+]                 CONFIGURE WINGS SUKSES             [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
   clear
+  exit 0
+}
+hackback_panel() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                    HACK BACK PANEL                 [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  # Minta input dari pengguna
+read -p "Masukkan Username Panel: " user
+read -p "password login " psswdhb
+  #!/bin/bash
+cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
+
+# Membuat lokasi baru
+php artisan p:user:make <<EOF
+yes
+hackback@gmail.com
+$user
+$user
+$user
+$psswdhb
+EOF
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                 AKUN TELAH DI ADD             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  
+  exit 0
+}
+auto_installer() {
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]            AUTO INSTALL PANEL + WINGS           [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+read -p "Masukkan Nama " nama
+read -p "Masukkan Password " pw
+read -p "Masukkan Subdomain " subdo
+read -p "Masukkan NodeSubdomain " nodesubdo
+
+bash <(curl -s https://pterodactyl-installer.se) <<EOF
+2
+\n
+\n
+pw
+Asia/Jakarta
+admin@gmail.com
+admin@gmail.com
+nama
+nama
+nama
+pw
+subdo
+y
+y
+y
+y
+yes
+A
+y
+y
+y
+subdo
+y
+user
+pw
+y
+nodesubdo
+y
+admin@gmail.com
+y
+EOF
+
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  AUTO INSTALL SUKSE             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  
   exit 0
 }
 # Main script
@@ -399,12 +482,12 @@ check_token
 while true; do
   clear
   echo -e "                                                                     "
-  echo -e "${RED}██╗░░██╗██╗░░░░░██╗░░░██╗███████╗██╗░░░██╗${NC}"
-  echo -e "${RED}╚██╗██╔╝██║░░░░░██║░░░██║╚════██║╚██╗░██╔╝${NC}"
-  echo -e "${RED}░╚███╔╝░██║░░░░░██║░░░██║░░███╔═╝░╚████╔╝░${NC}"
-  echo -e "${WHITE}░██╔██╗░██║░░░░░██║░░░██║██╔══╝░░░░╚██╔╝░░${NC}"
-  echo -e "${WHITE}██╔╝╚██╗███████╗╚██████╔╝███████╗░░░██║░░░${NC}"
-  echo -e "${WHITE}╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝░░░╚═╝░░░${NC}"
+  echo -e "${RED}  _  __ __                      __  __           __    ${NC}"
+  echo -e "${RED}  | |/ // /_  ______  __  __     / / / /___  _____/ /     Auto Installer By Xluzy${NC}"
+  echo -e "${WHITE}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/  -------------------------------------------${NC}"
+  echo -e "${WHITE} /   |/ / /_/ / / /_/ /_/ /_____/ __  / /_/ (__  )  /     Telegram : @xluzyhost1 ${NC}"
+  echo -e "${GRAY}/_/|_/_/\__,_/ /___/\_ _, /     /_/ /_/\____/____/\__/        Credit : @xluzyhost  ${NC}"
+  echo -e "${GRAY}                 /____/                                ${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"
@@ -413,7 +496,9 @@ while true; do
   echo "4. Create Node"
   echo "5. Uninstall Panel"
   echo "6. Stellar Theme"
-  echo "0. Exit"
+  echo "7. Hack Back Panel"
+  echo "9. Auto Install Panel"
+  echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
   clear
@@ -437,7 +522,13 @@ while true; do
       6)
       install_themeSteeler
       ;;
-    0)
+      7)
+      hackback_panel
+      ;;
+      8)
+      auto_installer
+      ;;
+    x)
       echo "Keluar dari skrip."
       exit 0
       ;;

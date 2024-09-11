@@ -482,12 +482,12 @@ check_token
 while true; do
   clear
   echo -e "                                                                     "
-  echo -e "${RED}  _  __ __                      __  __           __    ${NC}"
-  echo -e "${RED}  | |/ // /_  ______  __  __     / / / /___  _____/ /      Auto Installer By Xluzy${NC}"
-  echo -e "${WHITE}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/  -----------------------${NC}"
-  echo -e "${WHITE} /   |/ / /_/ / / /_/ /_/ /_____/ __  / /_/ (__  )  /     Telegram : @xluzyhost1 ${NC}"
-  echo -e "${GRAY}/_/|_/_/\__,_/ /___/\_ _, /     /_/ /_/\____/____/\__/       Credit : @xluzyhost  ${NC}"
-  echo -e "${GRAY}                 /____/                                ${NC}"
+  echo -e "${RED}   _  __ __                        __  __           __ ${NC}"
+  echo -e "${RED}  | |/ // /_  ______  __  __      / / / /___  _____/ /_    Auto Installer By Xluzy${NC}"
+  echo -e "${RED}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/    -----------------------${NC}"
+  echo -e "${RED} /   |/ / /_/ / / /_/ /_/ /_____/ __  / /_/ (__  )  /       Telegram : @xluzyhost1 ${NC}"
+  echo -e "${RED}/_/|_/_/\__,_/ /___/\__, /     /_/ /_/\____/____/\__/         Credit : @xluzyhost  ${NC}"
+  echo -e "${GRAY}                  /____/                                ${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"

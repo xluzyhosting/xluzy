@@ -486,7 +486,7 @@ while true; do
   echo -e "${RED}  | |/ // /_  ______  __  __      / / / /___  _____/ /_    Auto Installer By Xluzy${NC}"
   echo -e "${WHITE}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/    -----------------------${NC}"
   echo -e "${WHITE} /   |/ / /_/ / / /_/ /_/ /_____/ __  / /_/ (__  )  /       Telegram : @xluzyhost1 ${NC}"
-  echo -e "${WHITE}/_/|_/_/\__,_/ /___/\__, /     /_/ /_/\____/____/\__/         Credit : @xluzyhost  ${NC}"
+  echo -e "${GRAY}/_/|_/_/\__,_/ /___/\__, /     /_/ /_/\____/____/\__/         Credit : @xluzyhost  ${NC}"
   echo -e "${GRAY}                   /____/                                ${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"

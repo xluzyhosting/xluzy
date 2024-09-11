@@ -15,9 +15,9 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © XLUZY-HOST               [+]${NC}"
+  echo -e "${BLUE}[+]                    © XLUZY-HOST                 [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${RED}[+] =============================================== [+]${NC}"
+  echo -e "${RED}[+] ================================================ [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "dilarang keras untuk memperjual belikan."
@@ -58,7 +58,7 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY XLUZY-HOST            [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY XLUZY-HOST                [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
@@ -393,7 +393,7 @@ sudo systemctl start wings
 hackback_panel() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    HACK BACK PANEL                 [+]${NC}"
+  echo -e "${BLUE}[+]                    HACK BACK PANEL              [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   # Minta input dari pengguna
@@ -413,7 +413,7 @@ $psswdhb
 EOF
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 AKUN TELAH DI ADD             [+]${NC}"
+  echo -e "${GREEN}[+]                 AKUN TELAH DI ADD               [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
@@ -484,7 +484,7 @@ while true; do
   echo -e "                                                                     "
   echo -e "${RED}  _  __ __                      __  __           __    ${NC}"
   echo -e "${RED}  | |/ // /_  ______  __  __     / / / /___  _____/ /     Auto Installer By Xluzy${NC}"
-  echo -e "${WHITE}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/  -------------------------------------------${NC}"
+  echo -e "${WHITE}  |   // / / / /_  / / / / /_____/ /_/ / __ \/ ___/ __/  -----------------------${NC}"
   echo -e "${WHITE} /   |/ / /_/ / / /_/ /_/ /_____/ __  / /_/ (__  )  /     Telegram : @xluzyhost1 ${NC}"
   echo -e "${GRAY}/_/|_/_/\__,_/ /___/\_ _, /     /_/ /_/\____/____/\__/        Credit : @xluzyhost  ${NC}"
   echo -e "${GRAY}                 /____/                                ${NC}"

@@ -9,10 +9,10 @@ read -p "Masukkan Domainnode: " domainnode
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
 0
-xluzyhostmodehackback
-xluzyhost
-xluzyhost
-XluzyHosting
+xluzy
+xluzy
+xluzy
+xluzy
 Asia/Jakarta
 $email
 $email
